@@ -11,6 +11,10 @@ Tools: Power BI dashboard, CRM System
 
 2. Clean The Data
 
+Q: FACT vs DIMENSION Table?
+Fact - numbers and calculations
+Dimension - describe the rows in the fact table
+
 DIM_Date Table:
   DO need: 
       [DateKey]
