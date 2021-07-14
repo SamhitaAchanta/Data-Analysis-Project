@@ -52,26 +52,25 @@ WHERE
   [CalendarYear] >= 2019
 
 DIM_Customers Table:
-DO need:
-SELECT TOP (1000) 
-[CustomerKey]
-,[FirstName]
-,[LastName]
-,[Gender]
-,[DateFirstPurchase]
-DON'T need:
 
+DO need:
+  SELECT TOP (1000) 
+    [CustomerKey]
+    ,[FirstName]
+    ,[LastName]
+    ,[Gender]
+    ,[DateFirstPurchase]
+FROM [AdventureWorksDW2019].[dbo].[DimCustomer]
+
+DON'T need:
       ,[GeographyKey]
       ,[CustomerAlternateKey]
-      ,[Title]
-      
-      ,[MiddleName]
-      
+      ,[Title]      
+      ,[MiddleName]      
       ,[NameStyle]
       ,[BirthDate]
       ,[MaritalStatus]
       ,[Suffix]
-    
       ,[EmailAddress]
       ,[YearlyIncome]
       ,[TotalChildren]
@@ -87,7 +86,6 @@ DON'T need:
       ,[AddressLine1]
       ,[AddressLine2]
       ,[Phone]
-      
       ,[CommuteDistance]
-  FROM [AdventureWorksDW2019].[dbo].[DimCustomer]
+ 
 Final Query:
