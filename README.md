@@ -36,7 +36,7 @@ DIM_Date Table:
       ,[FiscalSemester]
   FROM [AdventureWorksDW2019].[dbo].[DimDate]
   
- Final Query
+ Final Query:
  SELECT 
   [DateKey], 
   [FullDateAlternateKey] AS Date, 
@@ -50,3 +50,44 @@ FROM
   [AdventureWorksDW2019].[dbo].[DimDate] 
 WHERE 
   [CalendarYear] >= 2019
+
+DIM_Customers Table:
+DO need:
+SELECT TOP (1000) 
+[CustomerKey]
+,[FirstName]
+,[LastName]
+,[Gender]
+,[DateFirstPurchase]
+DON'T need:
+
+      ,[GeographyKey]
+      ,[CustomerAlternateKey]
+      ,[Title]
+      
+      ,[MiddleName]
+      
+      ,[NameStyle]
+      ,[BirthDate]
+      ,[MaritalStatus]
+      ,[Suffix]
+    
+      ,[EmailAddress]
+      ,[YearlyIncome]
+      ,[TotalChildren]
+      ,[NumberChildrenAtHome]
+      ,[EnglishEducation]
+      ,[SpanishEducation]
+      ,[FrenchEducation]
+      ,[EnglishOccupation]
+      ,[SpanishOccupation]
+      ,[FrenchOccupation]
+      ,[HouseOwnerFlag]
+      ,[NumberCarsOwned]
+      ,[AddressLine1]
+      ,[AddressLine2]
+      ,[Phone]
+      
+      ,[CommuteDistance]
+  FROM [AdventureWorksDW2019].[dbo].[DimCustomer]
+Final Query:
