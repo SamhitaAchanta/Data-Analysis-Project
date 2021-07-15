@@ -173,8 +173,9 @@ FROM
 Order By 
   p.ProductKey ASC
   
-  FACT_InternetSales Table:
-  DO need:
+FACT_InternetSales Table:
+DO need:
+  
   SELECT [ProductKey]
       ,[OrderDateKey]
       ,[DueDateKey]
@@ -187,6 +188,7 @@ Order By
       ,[DueDate]
       ,[ShipDate]
   FROM [AdventureWorksDW2019].[dbo].[FactInternetSales]
+  
   DON'T need:
   SELECT 
       ,[PromotionKey]
