@@ -230,6 +230,7 @@ DO need:
 
 Important Steps Before Creating a Dashboard:
 
-*You have to establish the data model aka the correct relationships between the files
+*Establish the data model aka the correct relationships between the files
+
 *Make sure the data types are correct for each column before creating the dashboard
 
