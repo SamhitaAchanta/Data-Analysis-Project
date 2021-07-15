@@ -123,8 +123,6 @@ DO need:
   FROM [AdventureWorksDW2019].[dbo].[DimProduct]
   
 DON'T need:
-	[ProductKey]
-      ,[ProductAlternateKey]
       ,[ProductSubcategoryKey]
       ,[WeightUnitMeasureCode]
       ,[SizeUnitMeasureCode]
@@ -133,21 +131,16 @@ DON'T need:
       ,[FrenchProductName]
       ,[StandardCost]
       ,[FinishedGoodsFlag]
-      ,[Color]
       ,[SafetyStockLevel]
       ,[ReorderPoint]
       ,[ListPrice]
-      ,[Size]
       ,[SizeRange]
       ,[Weight]
       ,[DaysToManufacture]
-      ,[ProductLine]
       ,[DealerPrice]
       ,[Class]
       ,[Style]
-      ,[ModelName]
       ,[LargePhoto]
-      ,[EnglishDescription]
       ,[FrenchDescription]
       ,[ChineseDescription]
       ,[ArabicDescription]
@@ -158,7 +151,6 @@ DON'T need:
       ,[TurkishDescription]
       ,[StartDate]
       ,[EndDate]
-      ,[Status]
   FROM [AdventureWorksDW2019].[dbo].[DimProduct]
   
 Final Query:
@@ -180,4 +172,39 @@ FROM
   LEFT JOIN dbo.DimProductCategory AS pc ON ps.ProductCategoryKey = pc.ProductCategoryKey 
 Order By 
   p.ProductKey ASC
+  
+  FACT_InternetSales Table:
+  DO need:
+  SELECT [ProductKey]
+      ,[OrderDateKey]
+      ,[DueDateKey]
+      ,[ShipDateKey]
+      ,[CustomerKey]
+      ,[SalesOrderNumber]
+      ,[UnitPriceDiscountPct]
+      ,[SalesAmount]
+      ,[OrderDate]
+      ,[DueDate]
+      ,[ShipDate]
+  FROM [AdventureWorksDW2019].[dbo].[FactInternetSales]
+  DON'T need:
+  SELECT 
+      ,[PromotionKey]
+      ,[CurrencyKey]
+      ,[SalesTerritoryKey]
+      ,[SalesOrderLineNumber]
+      ,[RevisionNumber]
+      ,[OrderQuantity]
+      ,[UnitPrice]
+      ,[ExtendedAmount]
+      ,[UnitPriceDiscountPct]
+      ,[DiscountAmount]
+      ,[ProductStandardCost]
+      ,[TotalProductCost]
+      ,[TaxAmt]
+      ,[Freight]
+      ,[CarrierTrackingNumber]
+      ,[CustomerPONumber]
+  FROM [AdventureWorksDW2019].[dbo].[FactInternetSales]
+  Final Query:
 
