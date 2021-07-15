@@ -225,4 +225,7 @@ DO need:
 	LEFT(OrderDateKey,4) >= 2019 --  only need two years of data
   ORDER BY
 	OrderDateKey ASC
+	
+3. Load Data into PowerBI
+*You have to establish the data model aka the correct relationships between the files
 
