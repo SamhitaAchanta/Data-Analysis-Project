@@ -16,6 +16,7 @@ Fact - numbers and calculations
 Dimension - describe the rows in the fact table
 
 DIM_Date Table:
+
   DO need: 
       [DateKey]
       ,[FullDateAlternateKey]
@@ -108,6 +109,7 @@ SELECT
 	CustomerKey ASC -- ascending order of customer key
 	
 DIM_Product Table:
+
 DO need:
  SELECT  [ProductKey]
       ,[ProductAlternateKey]
@@ -208,5 +210,6 @@ DO need:
       ,[CarrierTrackingNumber]
       ,[CustomerPONumber]
   FROM [AdventureWorksDW2019].[dbo].[FactInternetSales]
+  
   Final Query:
 
