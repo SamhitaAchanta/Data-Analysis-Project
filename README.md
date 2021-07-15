@@ -121,6 +121,7 @@ DO need:
       ,[EnglishDescription]
       ,[Status]
   FROM [AdventureWorksDW2019].[dbo].[DimProduct]
+  
 DON'T need:
 	[ProductKey]
       ,[ProductAlternateKey]
