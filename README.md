@@ -174,8 +174,8 @@ Order By
   p.ProductKey ASC
   
 FACT_InternetSales Table:
+
 DO need:
-  
   SELECT [ProductKey]
       ,[OrderDateKey]
       ,[DueDateKey]
