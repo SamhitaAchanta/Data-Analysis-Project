@@ -237,7 +237,12 @@ Important Steps Before Creating a Dashboard:
 Calculations:
 
 Sales = SUM(FACT_InternetSales[SalesAmount])
+
 Total Budget = SUM(FACT_Budget[Budget])
+
 Sales / Total Budget = DIVIDE( [Sales] , [Total Budget])
+
 Make [Customer City] as data category called city. It will be easier to make a map. 
+
+
 
