@@ -1,12 +1,14 @@
-# Data-Analysis-Project
+# Data-Analysis-Project With SQL
 
 1. Business Demand 
 
-Q: What is a business demand? -->
 
 Goal: The business wants to improve their internet sales and they want to move from static reports to visual dashboards.
+
 Focus: They want to know how much they have sold of what products to what customers over a given time period. They want an overview of internet sales per customer and per products. They also want to know which product is their best seller and their audience to sell to and want the ability to filter them. 
+
 Info: Budget is given for 2021 and their analysis goes back up to 2 years.
+
 Tools: Power BI dashboard, CRM System
 
 2. Clean The Data
