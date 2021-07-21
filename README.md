@@ -33,7 +33,7 @@ This is the first page of the sales management dashboard with two more pages to 
 
 ![image](https://user-images.githubusercontent.com/51171467/126539958-0c528dbd-c4f8-4d1b-8cfa-ca8048b848ca.png)
 
-Here is the link to the full dashboard: 
+Here is the link to the full dashboard: Samhita-Achanta/repo/Sales Report/main branch/Sales Report.pbix
 
 Calculations:
 
