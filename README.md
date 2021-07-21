@@ -15,9 +15,12 @@ Tools: Power BI dashboard, CRM System
 
 I received the data and extracted the relevant information using SQL. I made 2 different types of tables: Fact and Dimension.  A Fact table contains numbers and calculations and a Dimension table describe the rows in the fact table.
 
-| Tables  |  
-| ------------- | 
-| Fact | Dimension |
+| Fact  |  Dimension |
+| ------ | ------- | 
+| FACT_InternetSales | DIM_Calender |
+| FACT_Budget | DIM_Customer |
+|             | DIM_Products |
+
 
 SELECT 
   [DateKey], 
