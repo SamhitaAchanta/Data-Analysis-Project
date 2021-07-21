@@ -31,6 +31,8 @@ Important Steps Before Creating a Dashboard: The Table Connections
 ### Sales Management Dashboard
 This is the first page of the sales management dashboard with two more pages to show sales over a given time period, per customers, and per products.
 
+**The full dashboard file is attached above.**
+
 ![image](https://user-images.githubusercontent.com/51171467/126539958-0c528dbd-c4f8-4d1b-8cfa-ca8048b848ca.png)
 
-*The full dashboard file is attached above.
+
