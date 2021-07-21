@@ -1,7 +1,7 @@
-# Data-Analysis-Project With SQL
+# Data Analysis Project With SQL
+## Sales Management
 
 1. Business Demand 
-
 
 Goal: The business wants to improve their internet sales and they want to move from static reports to visual dashboards.
 
@@ -11,7 +11,7 @@ Info: Budget is given for 2021 and their analysis goes back up to 2 years.
 
 Tools: Power BI dashboard, CRM System
 
-2. Clean The Data
+2. Data Cleansing and Transformation
 
 I received the data and extracted the relevant information using SQL. I made 2 different types of tables: Fact and Dimension.  A Fact table contains numbers and calculations and a Dimension table describe the rows in the fact table.
 
