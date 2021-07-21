@@ -1,6 +1,6 @@
 # Data Analysis Project With SQL - Sales Management
 
-1. Business Demand 
+### Business Demand 
 
 Goal: The business wants to improve their internet sales and they want to move from static reports to visual dashboards.
 
@@ -11,7 +11,7 @@ Info: Budget is given for 2021 and their analysis goes back up to 2 years.
 Tools: Power BI dashboard, CRM System
 
 
-2. Data Cleansing and Transformation
+### Data Cleansing and Transformation
 
 Before building the models, I extracted the relevant information using SQL. I made 2 different types of tables: Fact and Dimension.  A Fact table contains numbers and calculations and a Dimension table describe the rows in the fact table.
 
@@ -23,9 +23,12 @@ Before building the models, I extracted the relevant information using SQL. I ma
 
 *The SQL scripts are attached above.
 
-3. Load Data into PowerBI
+### Load Data into PowerBI
 
-Important Steps Before Creating a Dashboard:
+Important Steps Before Creating a Dashboard: The Table Connections
+![image](https://user-images.githubusercontent.com/51171467/126539419-a1370c4a-0280-4091-8551-9b68abb81ba6.png)
+
+
 
 *Establish the data model aka the correct relationships between the files
 
