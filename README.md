@@ -28,11 +28,12 @@ Before building the models, I extracted the relevant information using SQL. I ma
 Important Steps Before Creating a Dashboard: The Table Connections
 ![image](https://user-images.githubusercontent.com/51171467/126539419-a1370c4a-0280-4091-8551-9b68abb81ba6.png)
 
+### Sales Management Dashboard
+This is the first page of the sales management dashboard with two more pages to show sales over a given time period, per customers, and per products.
 
+![image](https://user-images.githubusercontent.com/51171467/126539958-0c528dbd-c4f8-4d1b-8cfa-ca8048b848ca.png)
 
-*Establish the data model aka the correct relationships between the files
-
-*Make sure the data types are correct for each column before creating the dashboard
+Here is the link to the full dashboard: 
 
 Calculations:
 
@@ -41,6 +42,8 @@ Sales = SUM(FACT_InternetSales[SalesAmount])
 Total Budget = SUM(FACT_Budget[Budget])
 
 Sales / Total Budget = DIVIDE( [Sales] , [Total Budget])
+
+Sales - Total Budget = [Sales] - [Total Budget]
 
 Make [Customer City] as data category called city. It will be easier to make a map. 
 
