@@ -15,9 +15,11 @@ Tools: Power BI dashboard, CRM System
 
 I received the data and extracted the relevant information using SQL. I made 2 different types of tables: Fact and Dimension.  A Fact table contains numbers and calculations and a Dimension table describe the rows in the fact table.
 
-| DIM_Date Table Query  |  
+| Tables  |  
 | ------------- | 
-| SELECT 
+| Fact | Dimension |
+
+SELECT 
   [DateKey], 
   [FullDateAlternateKey] AS Date, 
   [EnglishDayNameOfWeek] AS Day, 
@@ -29,9 +31,9 @@ I received the data and extracted the relevant information using SQL. I made 2 d
 FROM 
   [AdventureWorksDW2019].[dbo].[DimDate] 
 WHERE 
-  [CalendarYear] >= 2019  | 
-
-
+  [CalendarYear] >= 2019 
+  
+  
 DIM_Date Table:
 
   DO need: 
