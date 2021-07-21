@@ -15,10 +15,22 @@ Tools: Power BI dashboard, CRM System
 
 I received the data and extracted the relevant information using SQL. I made 2 different types of tables: Fact and Dimension.  A Fact table contains numbers and calculations and a Dimension table describe the rows in the fact table.
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| DIM_Date Table Query  |  
+| ------------- | 
+| SELECT 
+  [DateKey], 
+  [FullDateAlternateKey] AS Date, 
+  [EnglishDayNameOfWeek] AS Day, 
+  [EnglishMonthName] AS MonthName, 
+  Left([EnglishMonthName], 3) AS MonthShort, -- first 3 letters of each month
+  [MonthNumberOfYear] AS MonthNumber, 
+  [CalendarQuarter] AS Quarter, 
+  [CalendarYear] AS Year
+FROM 
+  [AdventureWorksDW2019].[dbo].[DimDate] 
+WHERE 
+  [CalendarYear] >= 2019  | 
+
 
 DIM_Date Table:
 
@@ -47,19 +59,7 @@ DIM_Date Table:
   FROM [AdventureWorksDW2019].[dbo].[DimDate]
   
  Final Query:
- SELECT 
-  [DateKey], 
-  [FullDateAlternateKey] AS Date, 
-  [EnglishDayNameOfWeek] AS Day, 
-  [EnglishMonthName] AS MonthName, 
-  Left([EnglishMonthName], 3) AS MonthShort, -- first 3 letters of each month
-  [MonthNumberOfYear] AS MonthNumber, 
-  [CalendarQuarter] AS Quarter, 
-  [CalendarYear] AS Year
-FROM 
-  [AdventureWorksDW2019].[dbo].[DimDate] 
-WHERE 
-  [CalendarYear] >= 2019
+ 
 
 DIM_Customers Table:
 
