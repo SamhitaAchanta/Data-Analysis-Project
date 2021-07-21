@@ -21,7 +21,8 @@ Before building the models, I extracted the relevant information using SQL. I ma
 | FACT_Budget | DIM_Customer |
 |             | DIM_Products |
 
-	
+*The SQL scripts are attached above.
+
 3. Load Data into PowerBI
 
 Important Steps Before Creating a Dashboard:
