@@ -1,5 +1,11 @@
 # Data Analysis Project With SQL - Sales Management
 
+## Table of contents
+* [General Info](#business-demand)
+* [Data Cleansing and Transformation](#data-cleansing-and-transformation)
+* [Load Data into PowerBI](#load-data-into-powerbi)
+* [Final Dashboard](#sales-management-dashboard)
+
 ### Business Demand 
 
 Goal: The business wants to improve their internet sales and they want to move from static reports to visual dashboards.
